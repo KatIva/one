@@ -1,0 +1,61 @@
+.first{ 
+    
+    background: url(css/img/Back.jpg) repeat;
+}
+
+@font-face {
+    font-family: ANTQUAI; /* Гарнитура шрифта */
+    src: url(css/fon/ANTQUAI.TTF); /* Путь к файлу со шрифтом */
+   }
+
+header{
+    width: 1173px;
+    height: 75px;
+    background:#87482a;
+    margin: auto;
+    margin-top:-20px;
+}
+main{
+    width: 1173px;
+    height: 1711px;
+    margin: auto;
+    background: #87482a;
+    background: #fae6b4 repeat-x;
+ 
+}
+footer{
+    width: 1173px;
+    height: 114px;
+    background:#ff9f29;
+    margin: auto;
+}
+[class*="col-"]{
+    padding: 0;  
+    opacity: 0.6;
+    background: #fc0; /* Цвет фона */
+    margin: auto;
+    text-align: center;
+}
+.h1 {
+    color:black;
+    text-align: center;
+    background-color: transparent;
+    font-size: 50px;
+    font-family: ANTQUAI;
+}
+h2 {
+    color:#ca3a27;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.oneT {
+    width: 80%;
+    border-spacing: 1px;
+    border-color: black;
+    text-align: center;
+}
+.table-striped th  {
+    background: orange;
+    color:white;
+    text-align: center;
+}
+.table-striped td{text-align: center;}

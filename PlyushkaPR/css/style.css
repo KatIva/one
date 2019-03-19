@@ -1,0 +1,176 @@
+.first{ 
+  /*??  width: 1920px;  ширина*/
+    height: 2100px; /*высота*/
+    background: url(img/Backdrop.jpg) repeat;
+}
+header{
+    width: 1173px;
+    height: 275px;
+    background:transparent;/*ПРОЗРАЧНЫЙ*/
+    margin: auto;
+}
+main{
+    width: 1173px;
+    height: 1711px;
+    background: white;
+    margin: auto;
+}
+footer{
+    width: 1173px;
+    height: 114px;
+    background: #87482a;
+    margin: auto;
+    margin-top: 1310px;
+}
+[class*="col-"]{
+    padding: 0;
+}
+.pnav{
+    width: 766px;
+    height: 50px;
+    margin: auto;
+}
+@font-face {
+    font-family: MyriaPro; /* Гарнитура шрифта */
+    src: url(fonts/MyriaProBlackSemiExt.ttf); /* Путь к файлу со шрифтом */
+   }
+a{
+    color: #9d6043;
+    font-family: MyriaPro;
+    font-size: 16px;
+}
+.navig{
+    display: flex;
+    justify-content:space-between;
+    line-height: 3.6;
+}
+a:hover {
+    border-bottom:2px solid #864729;/*подчеркиание при наедении*/
+    color: #864729; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: none;
+}
+hr{
+    border-top: 2px solid #e3e3e3;
+    color: 2px #e3e3e3;
+    width: 810px;
+    margin: 0 auto;
+    margin-block-start: auto;
+    margin-left: -3%;
+}
+/*.vpnav{ ПОДЧЕРКИВАНИЕ!!!
+    border-bottom: 2px solid #e3e3e3;
+    width: 809px;
+    height: 58px; 
+}*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 211px;/*изменится*/
+    margin: auto;
+    margin-left: -13%;/*изменится*/
+    margin-right: -10%;/*изменится*/
+}
+@font-face {
+    font-family: Nautilus; /* Гарнитура шрифта */
+    src: url(fonts/NautilusPompilius.otf); /* Путь к файлу со шрифтом */
+   }
+.plyu {
+    color: #864729;
+    font-family: Nautilus;
+    font-size: 60px;
+}
+@font-face {
+    font-family: CoreRhino45; /* Гарнитура шрифта */
+    src: url(fonts/CoreRhino45Regular.otf); /* Путь к файлу со шрифтом */
+   }
+.pinf {
+    color: #663016;
+    font-family: CoreRhino45;
+    font-size: 20px;
+}
+.onest {text-align: center;}
+
+@font-face {
+    font-family: CoreRhino35; /* Гарнитура шрифта */
+    src: url(fonts/CoreRhino35Light.otf); /* Путь к файлу со шрифтом */
+   }
+.twost {
+    color: #9d6043;
+    font-family: CoreRhino35;
+    font-size: 24px;
+    line-height: 28px; /*растояние меж строками*/
+    margin-left: -10px;/*левее*/
+}
+.pho {
+    margin-left: -11%;
+    margin-top: 12px;/*вниз*/
+}
+.freest {
+    color: #9d6043;
+    font-family: CoreRhino45;
+    font-size: 16px;
+    margin-top: 17px;/*вниз*/
+    margin-left: -50px;/*левее*/
+}
+.pas{
+    line-height: 20px;/*растояние меж строками*/
+}
+/*начало слайдер*/
+.sliderA {
+    width: 1173px;
+    height: 405px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-top: -1827px;
+}
+.sliderA > input {
+    display: none;
+}
+.sliderA > input + label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background: white;
+    border: 2px solid white;
+
+    cursor: pointer;
+
+    z-index: 100;
+    position: relative;
+
+    margin-right: 4px;
+    top: 90%;
+
+    transition: background 0.8s ease-out 0s;
+}
+.sliderA > input + label:hover {
+    background:white;
+    border: white;
+}
+.sliderA > input:checked + label {
+    background: #864729;
+    border: white;
+}
+.sliderA > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+.sliderA > div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+.sliderA > input:checked + label + div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+/*конец слайдера*/
