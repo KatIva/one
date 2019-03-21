@@ -1,14 +1,10 @@
-.first{ 
-  /*??  width: 1920px;  ширина*/
-    height: 2100px; /*высота*/
-    background: url(img/Backdrop.jpg) repeat;
+body {
+  background: url(img/Backdrop.jpg);
 }
-header{
-    width: 1173px;
-    height: 275px;
-    background:transparent;/*ПРОЗРАЧНЫЙ*/
-    margin: auto;
-}
+#header {  
+  height: 275px;
+  margin: auto;
+  }
 main{
     width: 1173px;
     height: 1711px;
@@ -20,157 +16,368 @@ footer{
     height: 114px;
     background: #87482a;
     margin: auto;
-    margin-top: 1310px;
 }
-[class*="col-"]{
-    padding: 0;
-}
-.pnav{
-    width: 766px;
-    height: 50px;
-    margin: auto;
-}
-@font-face {
-    font-family: MyriaPro; /* Гарнитура шрифта */
-    src: url(fonts/MyriaProBlackSemiExt.ttf); /* Путь к файлу со шрифтом */
-   }
-a{
-    color: #9d6043;
-    font-family: MyriaPro;
-    font-size: 16px;
-}
-.navig{
-    display: flex;
-    justify-content:space-between;
-    line-height: 3.6;
-}
-a:hover {
-    border-bottom:2px solid #864729;/*подчеркиание при наедении*/
-    color: #864729; /* Цвет ссылки при наведении на нее курсора мыши */  
-    text-decoration: none;
+.informationbl{
+  height: 275px;
+  margin: auto;
+  text-align:center;
 }
 hr{
-    border-top: 2px solid #e3e3e3;
-    color: 2px #e3e3e3;
-    width: 810px;
-    margin: 0 auto;
-    margin-block-start: auto;
-    margin-left: -3%;
-}
-/*.vpnav{ ПОДЧЕРКИВАНИЕ!!!
-    border-bottom: 2px solid #e3e3e3;
-    width: 809px;
-    height: 58px; 
-}*/
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    height: 211px;/*изменится*/
-    margin: auto;
-    margin-left: -13%;/*изменится*/
-    margin-right: -10%;/*изменится*/
-}
-@font-face {
-    font-family: Nautilus; /* Гарнитура шрифта */
-    src: url(fonts/NautilusPompilius.otf); /* Путь к файлу со шрифтом */
-   }
-.plyu {
-    color: #864729;
-    font-family: Nautilus;
-    font-size: 60px;
-}
-@font-face {
-    font-family: CoreRhino45; /* Гарнитура шрифта */
-    src: url(fonts/CoreRhino45Regular.otf); /* Путь к файлу со шрифтом */
-   }
-.pinf {
-    color: #663016;
-    font-family: CoreRhino45;
-    font-size: 20px;
-}
-.onest {text-align: center;}
+  border-top: 2px solid #e3e3e3;
+  color: 2px #e3e3e3;
+  width: 800px;
+  margin-block-start: auto;}
 
+.vl{
+  height: 58px;
+  margin: auto;
+}
 @font-face {
-    font-family: CoreRhino35; /* Гарнитура шрифта */
-    src: url(fonts/CoreRhino35Light.otf); /* Путь к файлу со шрифтом */
-   }
-.twost {
-    color: #9d6043;
-    font-family: CoreRhino35;
-    font-size: 24px;
-    line-height: 28px; /*растояние меж строками*/
-    margin-left: -10px;/*левее*/
+  font-family: MyriaPro; /* Гарнитура шрифта */
+  src: url(fonts/MyriaProBlackSemiExt.ttf); /* Путь к файлу со шрифтом */
+ }
+a{
+  color: #9d6043;
+  font-family: MyriaPro;
+  font-size: 16px;
 }
-.pho {
-    margin-left: -11%;
-    margin-top: 12px;/*вниз*/
+.topnav{
+  display: flex;
+  justify-content:space-between;
+  line-height: 3.6;
+  text-align:center;
 }
-.freest {
-    color: #9d6043;
-    font-family: CoreRhino45;
-    font-size: 16px;
-    margin-top: 17px;/*вниз*/
-    margin-left: -50px;/*левее*/
+
+.nav>li>a:hover {
+  background: transparent;
+  border-bottom:2px solid #864729;/*подчеркиание при наедении*/
+color: #864729; /* Цвет ссылки при наведении на нее курсора мыши */  
+text-decoration: none; }
+
+.topnav ul {
+  width: 100%;
+  display:inline-block;  
 }
-.pas{
-    line-height: 20px;/*растояние меж строками*/
+
+.topnav ul li {
+  float: none;
+  display: inline-block;
+  margin-left: 51px;
+  margin-right: 51px;
+  margin-top: 4px; 
 }
-/*начало слайдер*/
-.sliderA {
-    width: 1173px;
-    height: 405px;
+.topnav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+  /* Стили для information блока  
+  .informationbl {
+    margin-bottom: 30px;
+  }*/
+  .map span{position: relative;}
+  .mail span{position: relative;}
+  .phone span{
     position: relative;
-    text-align: center;
-    margin: auto;
-    margin-top: -1827px;
+    padding-right: 16px;}
+
+.informationbl {
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+      height: 211px;/*изменится*/
+      margin: auto;
+      /*margin-left: -13%;изменится*/
+      /*margin-right: -10%;изменится*/
+  } 
+
+  @font-face {
+      font-family: Nautilus; /* Гарнитура шрифта */
+      src: url(fonts/NautilusPompilius.otf); /* Путь к файлу со шрифтом */
+     }
+  .plyu {
+      color: #864729;
+      font-family: Nautilus;
+      font-size: 60px;
+  }
+  @font-face {
+      font-family: CoreRhino45; /* Гарнитура шрифта */
+      src: url(fonts/CoreRhino45Regular.otf); /* Путь к файлу со шрифтом */
+     }
+  .pinf {
+      color: #663016;
+      font-family: CoreRhino45;
+      font-size: 20px;
+  }
+.onest{margin-right: 56px;}
+
+  @font-face {
+      font-family: CoreRhino35; /* Гарнитура шрифта */
+      src: url(fonts/CoreRhino35Light.otf); /* Путь к файлу со шрифтом */
+     }
+  .twost {
+      color: #9d6043;
+      font-family: CoreRhino35;
+      font-size: 24px;
+      line-height: 28px; /*растояние меж строками*/
+      /*margin-left: -10px;левее*/
+  }
+.pho {
+      margin-left: -8%;
+      margin-top: 15px;/*вниз*/}
+.ph2 {
+  margin-block-end: 12px;
 }
+  .freest {
+      color: #9d6043;
+      font-family: CoreRhino45;
+      font-size: 16px;
+      text-align:left;
+      margin-top: 15px;
+      margin-left: 56px;
+      /*margin-left: -50px;левее*/
+  }
+.pas11{
+  margin-top: -5px;
+  margin-block-end: 23px;
+}
+
+.pas11:before {
+  content: url(img/map.png); 
+  position: absolute;
+  margin-left: -8%;
+  margin-top: 6px;
+    }
+.pas12:before {
+      content: url(img/map.png); 
+      position: absolute;
+      margin-left: -8%;
+      margin-top: 5px;
+    }
+ 
+  /*начало слайдер*/
+.sliderA {
+  width: 1173px;
+  height: 405px;
+  position: relative;
+  text-align: center;
+  margin: auto;}
+  
+section > hr{
+  border: none; /* Убираем границу для браузера Firefox */
+  color:transparent; /* Цвет линии для остальных браузеров */
+  background-color: transparent; /* Цвет линии для браузера Firefox и Opera */
+  height: 0px; /* Толщина линии */
+}
+
 .sliderA > input {
-    display: none;
+  display: none;
 }
 .sliderA > input + label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 8px;
-    background: white;
-    border: 2px solid white;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 8px;
+  background: white;
+  border: 2px solid white;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    z-index: 100;
-    position: relative;
+  z-index: 100;
+  position: relative;
 
-    margin-right: 4px;
-    top: 90%;
+  margin-right: 4px;
+  top: 90%;
 
-    transition: background 0.8s ease-out 0s;
+  transition: background 0.8s ease-out 0s;
 }
 .sliderA > input + label:hover {
-    background:white;
-    border: white;
+  background:white;
+  border: white;
 }
 .sliderA > input:checked + label {
-    background: #864729;
-    border: white;
+  background: #864729;
+  border: white;
 }
 .sliderA > div {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
 }
 .sliderA > div {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
 }
 .sliderA > input:checked + label + div {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
 }
 /*конец слайдера*/
+/*МЕНЮ*/
+
+.content_inner > p {
+  margin: 0 0 35px;
+  width: 100%;}/**/
+
+#middle {
+  position: relative;
+}
+
+.sidebar {
+  margin-bottom: 30px;
+  margin-top: 51px;
+  margin-left: -2px;
+  box-shadow:0.4em 0.4em 10px #efefef;
+}
+[class*="col-md-3"]{
+padding-left:unset; 
+}
+@font-face {
+  font-family: MyriaProReg; /* Гарнитура шрифта */
+  src: url(fonts/MariadProRegular.ttf); /* Путь к файлу со шрифтом */
+ }
+ @font-face {
+  font-family: MyriaProBolt; /* Гарнитура шрифта */
+  src: url(fonts/MariadProBolt.otf); /* Путь к файлу со шрифтом */
+ }
+
+.titl_m {
+  font-size: 20px;
+  color: #864729;
+  margin: auto;
+  text-transform: uppercase;
+  font-family: 'MyriaProBolt';
+  background: #f5f5f5;
+  padding: 30px 0px 2px 15px;
+}
+.MB1 {
+  font-size: 18px;
+  font-family: MyriaProReg;
+} 
+#sidebar-menu {
+  padding-left: 0;
+  padding-right: 0;
+}
+#sidebar-menu ul{
+  position: relative;
+  margin: 0;
+  background: #f5f5f5;
+  padding: 18px 0;
+  width: 100%;
+  border: none;
+}
+#sidebar-menu ul li{
+  list-style-type: none;
+  width: 100%;
+}
+#sidebar-menu ul li a{
+  padding: 14px 44px 14px 15px;
+  text-decoration: none;
+  display: block;
+  color: #9d6043;
+  position: relative;
+  font-size: 18px;
+  font-family: MyriaProReg;
+}
+#sidebar-menu ul li a:hover{
+  background:linear-gradient(to right, #864a31, #9c5f42 , #ae785c );
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 17px;
+}
+/*Выпадающее меню&-ДОДЕЛАТЬ!!!*/
+#sidebar-menu .dropdown-menu a:hover{
+text-decoration-color: #864729;
+text-decoration-line:underline;
+font-weight: bold;
+}
+
+.dropdown-menu li a{
+  margin-left: 17px; /* Сдвигаем подменю вправо */
+  margin-top: -1em;
+  font-size: 15px;
+  font-family:MyriaProReg;
+}  
+
+    /*начало  Контента*/
+@font-face {
+  font-family: CoreRhino65Bold; /* Гарнитура шрифта */
+  src: url(fonts/CoreRhino65Bold.otf);}
+h1 {
+  font-size: 35px;
+  font-family: CoreRhino65Bold;
+  color: #864729;
+  margin-bottom: 35px;
+}
+h2 {
+  font-size: 25px;
+  font-family: CoreRhino65Bold;
+  color: #864729;
+  margin-bottom: 30px;
+}
+.content_inner p{
+  font-size: 14px;
+  font-family: MyriaProReg;
+  color: #444444 ; }
+
+.content_inner li{
+  font-size: 14px;
+  font-family: MyriaProReg;
+  color: #444444 ; 
+}
+.content_inner li {
+  list-style-type: none; /* Прячем исходные маркеры */
+ }
+.content_inner li:before {
+  color: #9d6043; /* Цвет маркера */
+  content: "\25CF"; /* Сам маркер */
+  padding-right: 13px; /* Расстояние от маркера до текста */
+  padding-top: -1px;
+ }
+.col-md-offset-1 {
+  margin: auto;
+}
+ 
+#content {
+  min-height: 500px;/*мин высота!*/
+  padding-top: 51px;
+  background: #ffffff;
+  width: 830px;
+}
+.content_inner {
+  margin-bottom: 50px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 25px;
+  color: #363636;
+  font-family: 'Museo Sans 500';
+}
+.breadcrumb {
+  background-color: transparent;
+  padding: 0 0;
+  
+}
+.breadcrumb>li+li:before {
+  padding: 0 6px;
+  color: #94573c;
+  content: "/\00a0";}
+
+  /*ДОДЕЛАТЬ хлебные кршки*/
+.breadcrumb a {
+  color: #9d6043;
+  font-family: MyriaProReg;
+  font-size: 14px;
+  padding-block-end: 2px;}
+
+@font-face {
+  font-family: MyriadProSem; /* Гарнитура шрифта */
+  src: url(fonts/MyriadProSemibold.ttf);}
+.breadcrumb .active a{
+  color: #864729;
+  font-family: MyriadProSem;
+  font-size: 14px;
+}
