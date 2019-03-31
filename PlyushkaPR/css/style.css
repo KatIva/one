@@ -17,9 +17,10 @@ footer{
 hr{
   border-top: 2px solid #e3e3e3;
   color: 2px #e3e3e3;
-  margin-left: 170px;
-  margin-right: 170px;
-  margin-block-start: auto;}
+  margin-left: 130px;
+    margin-right: 205px;
+    margin-block-start: auto;
+    margin-top: -53px;}
 
 #header.row{
   height: 58px;
@@ -89,6 +90,7 @@ a{
       color: #864729;
       font-family: Nautilus;
       font-size: 60px;
+      margin-top: 5px;
   }
 @font-face {
       font-family: CoreRhino45; /* Гарнитура шрифта */
@@ -98,6 +100,7 @@ a{
       color: #663016;
       font-family: CoreRhino45;
       font-size: 20px;
+      margin-top: -10px;
   }
 .onest{margin-right: 30px;}
 
@@ -156,7 +159,7 @@ a{
 
  .sliderA > div {
   position: absolute;
-  top: 0px;
+ /* top: 0px;*/
   left: 0px;
   right: 0px;
   bottom: 0px;
@@ -262,7 +265,7 @@ main .container{
   position: relative;
   margin: 0;
   background: #f5f5f5;
-  padding: 18px 0;
+  padding: 18px 0px;
   width: 100%;
   border: none;
   box-shadow: none;
@@ -342,19 +345,19 @@ h1 {
   font-size: 35px;
   font-family: CoreRhino65Bold;
   color: #864729;
-  margin-top: 0;
+  margin-top: -10px;
 }
 h2 {
   font-size: 25px;
   font-family: CoreRhino65Bold;
   color: #864729;
-  margin: 40px 0 20px 0;
+  margin: 30px 0 0 0;
 }
 .content_inner p{
   font-size: 14px;
   font-family: MyriaProReg;
   color: #444444 ;
-  margin: 0 0 18px;
+  margin:29px 0 18px;
  }
 
 .content_inner li{
@@ -391,6 +394,11 @@ h2 {
   line-height: 25px;
   color: #363636;
   margin-top: 21px;
+  line-height: 1.7;
+}
+.content_inner ul{
+  margin-top: -10px;
+  line-height: 2.5;
 }
 
 
@@ -437,32 +445,338 @@ h2 {
 .Ors{
   margin-right: -3px;
 }
+.Ors p{
+  text-align:right;
+}
+.make p{
+  text-align:right;
+}
 /*Адаптивная верстка */
-@media (min-width: 992px){
-
-/*.sliderA {
-  padding-top: 306px;*/
-
+@media screen and (min-width: 992px) and (max-width: 1200px){
+.plyu {
+    font-size: 51px;
+}
+.sliderA {
+  padding-top: 330px;}
+.pas11:before {
+    margin-left: -12%;}
+.pas12:before {
+    margin-left: -12%;}
+.FootTwo{
+  margin-right: 0px; }
+hr{margin-top: -21px;}
 }
 
-@media (min-width: 768px){
-  .onest {
-    margin-right: auto; }
-  /*.freest {
-    margin-left: 296px;
-  }*/
-  .pas11:before {
-    margin-left: -12%;
+@media screen and (min-width: 768px) and (max-width: 991px){
+  
+.onest {
+    margin-right: auto;
+    margin-top: 30px; }
+.freest {
+    margin-left: 95px;
+    margin-top: 17px;}
+.pas11:before {
+    margin-left: -8%;}
+.pas12:before {
+    margin-left: -8%;}
+  
+.pho {
+    margin-left: -1%;}
+.sliderA {
+    padding-top: 240px;}
+.sidebar {
+  box-shadow: none;
+  margin-left: 0%;
+  box-shadow: none;
+  margin: 5% 20%;
+}
+.titl_m {
+  text-align: center;
+}
+#sidebar-menu ul li a { 
+  text-align: center;
+  background: #f5f5f5;
+  margin-left: 15px;
+}
+#sidebar-menu ul li { 
+  text-align: center;
+  margin-left: -10px;
+}
+.FootTwo {
+  margin-right: 20px;}
+
+.dropdown-menu {
+    left: -13px;}
+
+#sidebar-menu .dropdown-menu a {
+    text-align:center;
+    /*margin-right: -43px;*/}
+
+#content {
+  padding: 0px 13px 75px 0px;}
+#sidebar-menu ul {
+  padding: 18px 10px 0 50px;}
+hr {
+    margin-top: -1px;
+    margin-left: 100px;
+    margin-right: 90px;}
+.navbar-nav {
+      margin-left: 85px;}
+}
+
+@media screen and (min-width: 450px) and (max-width: 767px){  
+  
+.col-sm-12 {
+    width: 100%;
+    padding-right: 23px;}
+.twost{
+  font-size: 15px;}
+.freest{
+  font-size: 13px;
+  margin-top: 20px;}
+.pas11:before {
+  margin-left: -10%;
+  margin-top: -1px; }
+.pas12:before {
+  margin-left: -10%;
+  margin-top: -1px;}
+.sliderA label{
+  display: none;}
+.plyu {
+  font-size: 50px;}
+.onest {
+  margin-right: 0px;
+  margin-top: 30px;}
+  
+.sidebar {
+  box-shadow: none;
+  margin: 5% 0%;}
+
+.titl_m {
+  text-align: center;
   }
-  .pas12:before {
-    margin-left: -12%;
+  #sidebar-menu ul li a { 
+    text-align: center;
+    margin-left: 60px;
+  }
+  #sidebar-menu ul li { 
+    text-align: center;
+    margin-left: -10px;}
+.sliderA {
+    padding-top: 180px;}
+.FootOne{
+  text-align: center;}
+.Ors p {
+   text-align: center;}
+.make p {
+  text-align: center;}
+.FootTwo {
+  margin-top: 0px;}
+.dropdown-menu {
+  left: 10px;}
+#sidebar-menu .dropdown-menu a {
+    text-align:center;
+    margin-right: -43px;}
+#content {
+    padding: 0px 13px 75px 0px;}
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px){
+  .col-sm-12 {
+    width: 100%;
+    padding-right: 23px;}
+
+.twost{
+  font-size: 10px;
+  margin-left: -11px;}
+.freest{
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: auto;
+  padding-left: 34px;}
+.pas11:before {
+  margin-left: -13%;
+  margin-top: -1px; }
+.pas12:before {
+  margin-left: -13%;
+  margin-top: -1px;}
+.sliderA label{
+  display: none;}
+.plyu {
+  font-size: 42px;}
+.onest {
+  margin-right: 0px;}
+  
+.sidebar {
+  box-shadow: none;
+  margin: 5% 0%;}
+
+.titl_m {
+  text-align: center;
+  }
+  #sidebar-menu ul li a { 
+    text-align: center;
+    margin-left: 60px;
+  }
+  #sidebar-menu ul li { 
+    text-align: center;
+    margin-left: -10px;}
+.sliderA {
+    padding-top: 89px;}
+.FootOne{
+  text-align: center;}
+.Ors p {
+   text-align: center;}
+.make p {
+  text-align: center;}
+.FootTwo {
+  margin-top: 0px;}
+.dropdown-menu {
+  left: 10px;}
+#sidebar-menu .dropdown-menu a {
+    text-align:center;
+    margin-right: -43px;}
+#content {
+    padding: 0px 13px 75px 0px;}
+}
+/*ПРБА*/
+
+/* Clearfix */
+.topnav:before,
+.topnav:after {
+    content: " ";
+    display: table;	
+}
+.topnav:after {
+    clear: both;}
+.topnav {
+    *zoom: 1;}
+
+/* Basic Styles */
+
+.nav-wrap main-menu nav {
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-wrap main-menu nav li {
+  display: inline;
+}
+.nav-wrap main-menu nav a {
+  display: inline-block;
+  /*width: 150px;
+  text-align: center;*/
+  text-decoration: none;
+}
+.nav-wrap main-menu nav li a {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+.nav-wrap main-menu nav li:last-child a {
+  border-right: 0;
+}
+.nav-wrap main-menu nav a:hover, nav a:active {
+  background-color: #663014;; 
+  color: white;
+}
+.nav-wrap main-menu nav a#pull {
+  display: none;
+} 
+.topnav #pull {
+  font-family: Nautilus;
+  color: white;
+  font-size: 30px;
+
+}
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 900px) {
+
+  .nav-wrap main-menu nav {
+    border-bottom: 0;
+    height: auto;
+  }
+.nav-wrap main-menu nav ul {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+.higherMenu nav li {
+  		width: 50%;
+  		float: left;
+  		position: relative;
+  	}
+  
+.higherMenu nav a {
+    	text-align: left;
+    	width: 100%;
+    	text-indent: 25px;
+  	}
+.higherMenu nav a#pull {
+    display: block;
+    background-color: #944620;
+    width: 100%;
+    position: relative;
+  }
+hr {
+  display: none;
+}
+.higherMenu nav a#pull:after {
+    content:"";
+    background: url('img/bmenu.png') no-repeat;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    position: absolute;
+    right: 39px;
+    top:17px;
+  }
+.topnav ul a{
+  font-size: 14px;}
+}
+
+@media only screen and (max-width : 648px){
+.topnav ul a{
+    font-size: 12px;
+    padding-left: 20px;
+}
+}
+@media only screen and (max-width : 611px){
+  .topnav ul a{
+      font-size: 11px;
+      padding-left: 20px;
+  }
+  }
+@media only screen and (max-width : 591px){
+  .topnav ul a{
+      font-size: 10px;
+      padding-left: 10px;
+    }
+  }
+@media only screen and (max-width : 533px){
+  .topnav ul a{
+      font-size: 8px;
+      padding-left: 10px;
+    }
+  }
+@media only screen and (max-width : 460px){
+  .topnav ul a{
+      font-size: 7px;
+      padding-left: 10px;
+      } 
+    }
+@media only screen and (max-width : 410px){
+  .topnav ul a{
+      font-size: 6px;
+      padding-left: 10px;
+      } 
+    }
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+.higherMenu nav li {
+    display: block;
+    float: none;
+    width: 100%;
   }
   
-  .pho {
-    margin-left: -1%;
-  }
-  
-  /*.sliderA {
-    padding-top: 229px;
-  }*/
 }

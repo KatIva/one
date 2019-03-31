@@ -7,16 +7,19 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" >
   <link href="css/style.css"rel="stylesheet" >
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <title>Plyushka</title>
 </head>
 <body>
     <header id="header">
         <div class="container">
-          <!--верхнее меню-->
+       
             <div class="row">
               <div class="col-md-12 col-sm-12 w_100">
-                
+              <!--<h1 class="burger"><span>МЕНЮ </span></h1>-->
+              <nav class="higherMenu">
+              <!-- <a id="pull" title="Меню" href="">Меню</a> -->
               <div class="nav-wrap main-menu">
               <nav class="topnav ">
                   <ul class="nav navbar-nav ">
@@ -25,10 +28,13 @@
                   <li><a href="/" title="КАТАЛОГ">КАТАЛОГ</a></li>
                   <li><a href="/" title="КОНТАКТЫ">КОНТАКТЫ</a></li>
                   </ul>
+                  <a href="#" id="pull">Меню</a>
               </nav> 
-        
             <hr/>  
               </div>
+
+            </nav>
+
               </div>
             </div>
 
@@ -38,12 +44,12 @@
             <div class="row">
                 <div class="col-md-5 сol-sm-12"><div class="onest"><p class="plyu">ООО «Плюшка»</p>
                   <p class="pinf">Кондитерские изделия</p></div></div>
-                <div class="col-md-4 сol-sm-6"><div class="twost"> <p class="pho"><img src="css/img/phone.png" alt="image1">
+                <div class="col-md-4 сol-sm-6 col-xs-6"><div class="twost"> <p class="pho"><img src="css/img/phone.png" alt="image1">
                   8 (800) 888-88-88</p>
                 <p class="ph2">8 (800) 888-88-88</p>
                 <p>8 (800) 888-88-88</p>
                 </div></div>
-                <div class="col-md-3 сol-sm-6"><div class="freest"><div class="pas1">
+                <div class="col-md-3 сol-sm-6 col-xs-6"><div class="freest"><div class="pas1">
                     <p class="pas11"> 
                     г. Оренбург,<br>ул. Примерная, дом 15 </p>
                     </div> 
@@ -58,8 +64,7 @@
         </header>
         <!----><div class="container">
           <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12"> <!--СДЕЛАТЬ адаптивным!?-->
-
+          <!--СДЕЛАТЬ адаптивным!?-->
             <section class='sliderA'>
                 <input type="radio" name="slider1" id="slider1_1" checked="checked">
                 <label for="slider1_1"></label>
@@ -72,7 +77,6 @@
                     <div> <img src='css/img/2baner.jpg' alt=''> </div>
             </section>
 
-            <!----></div>
           </div> 
         </div>  
   <!--конец-слайдер -->
@@ -81,7 +85,7 @@
         <div class="row">
           <div class="col-md-3 col-sm-12">
             <aside class="sidebar">
-              <div class="titl_m">КАТАЛОГ ТОВАРОВ</div>
+              <div id="1pull" class="titl_m">КАТАЛОГ ТОВАРОВ</div>
               <nav id="sidebar-menu" class="nav-wrap left-menu-wrap">
                 <ul >
                   <li><a href="#" title="Пример">Пример пункта</a></li>
@@ -179,12 +183,11 @@
             <div class="col-md-3 col-md-offset-4 col-sm-6 col-xs-12">
                 <div class="FootTwo"> 
                 <div class="Ors">
-                  <p align="right"><img src="css/img/Ors.png" alt="image3"></p>
+                  <p><img src="css/img/Ors.png" alt="image3"></p>
                 </div>
                 <div class="make">
-                  <p align="right"><a href="#">СOЗДАНИЕ САЙТОВ</a> в Оренбурге</p>
+                  <p><a href="#">СOЗДАНИЕ САЙТОВ</a> в Оренбурге</p>
                 </div>
-                <div class="FootOne"> 
             </div>
         </div>
         </div>
